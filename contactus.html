@@ -1,0 +1,56 @@
+<html>
+<head>
+<link href="css\metro.css" rel="stylesheet" type="text/css"/>
+<link href="css\metro-colors.css" rel="stylesheet" type="text/css"/>
+<link href="css\metro-icons.css" rel="stylesheet" type="text/css"/>
+<link href="css\metro-responsive.css" rel="stylesheet" type="text/css"/>
+<link href="styles.css" rel="stylesheet" type="text/css"/>
+
+<link rel="shortcut icon" href="logo-white.png"/>
+
+<script src="style.js"></script>
+</head>
+<body onload="initMap();">
+<div style="color:#909090;">
+<h1 class="ddr">Contact Us :</h1> 
+<div class="columns col-4">
+<h3>REVA University</h3>
+Rukmini Knowledge Park<br>
+Kattigenahalli, Yelahanka<br>
+Banglore, 560064<br><br>
+TEL : +91 80662 26622<br>
+FAX : +91 80284 78539<br>
+</div>
+<div class="columns col-4">
+	<h3>Registered Office </h3>
+	Divya Shree Chambers, "A" Wing<br>
+	#11, O'Shaugnessy Road<br>
+	Bengaluru, 560025<br><br>
+	TEL : +91 80222 13344<br>
+	FAX : +91 80222 28840<br>
+</div>
+<div class="columns col-4">
+<div id="map" style="border:1px solid; width: 300px; height: 250px;"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 13.1166884, lng: 77.6344650};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCCw9Wbt1hR4KT3n7-WWQghYlKJqDdqfhE&callback=initMap">
+    </script>
+</div>
+
+<!--<div class="columns col-12 ddr">&copy; CodeNium 2018</div>-->
+
+</div>
+</body>
+</html>
